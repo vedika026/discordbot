@@ -3,8 +3,7 @@ import asyncio
 import datetime
 import google.generativeai as genai
 from discord.ext import commands, tasks
-client=discord.Client()
-@client.event
-async def on_ready():
-    print("We have logged in as {0.user}".format(client))
-          
+intents=discord.Intents.default()
+intents.message_content=True
+bot=commands.Bot(command_prefix="$", intents=intents)
+TOKEN=os.getenv("MTM0NjEyMDE0NjIwNDM2MDgwNQ.GU6VEg.ETp7fvNJvQ53uINslvAgCiEqcKGVk7qY10mBhw")
