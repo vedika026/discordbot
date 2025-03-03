@@ -1,4 +1,5 @@
 import discord
+import os
 import asyncio
 import datetime
 import google.generativeai as genai
